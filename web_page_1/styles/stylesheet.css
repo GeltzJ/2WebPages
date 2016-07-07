@@ -1,1 +1,63 @@
-/* it's dat bot */
+body, h1, h3, h4 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    width: 290px;
+    height: 200px;
+    margin: 5px;
+    border: black solid;
+}
+
+h1 {
+    border-bottom: dashed purple;
+}
+
+h4 {
+    text-align: center;
+    font: 44px sans-serif;
+}
+
+#user {
+    width: 300px;
+    height: 245px;
+    margin: 12px 0 0 12px;
+    float: left;
+}
+
+#computer {
+    width: 300px;
+    height: 245px;
+    margin: 12px 12px 0 0;
+    float: right;
+}
+
+input {
+    margin: 12px 10px
+}
+
+.r {
+    background: url(/images/rock.jpg) no-repeat fixed center;
+    font-size: 40px;
+    background-attachment:local;
+    background-size: cover;
+    width: 200px;
+}
+
+.p {
+     background: url(/images/paper.jpg) no-repeat fixed center;
+    font-size: 40px;
+    background-attachment:local;
+    background-size: cover;
+    width: 200px;
+}
+
+.s {
+     background: url(/images/scissors.png) no-repeat fixed center;
+    font-size: 40px;
+    background-attachment:local;
+    background-size: cover;
+    width: 200px;
+}
