@@ -1,1 +1,20 @@
-/* it's dat bot */
+.r {
+    background: url(/images/rock.jpg) no-repeat fixed center;
+    font-size: 40px;
+    background-attachment:local;
+    background-size: cover;
+}
+
+.p {
+     background: url(/images/paper.jpg) no-repeat fixed center;
+    font-size: 40px;
+    background-attachment:local;
+    background-size: cover;
+}
+
+.s {
+     background: url(/images/scissors.png) no-repeat fixed center;
+    font-size: 40px;
+    background-attachment:local;
+    background-size: cover;
+}
