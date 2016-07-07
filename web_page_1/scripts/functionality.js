@@ -6,6 +6,8 @@ function Rock()
 {
     var compChoice = 0;
     
+    document.getElementById("chosen").src = "images/rock.jpg";
+    
     while(compChoice == 0)
         {
             compChoice = Math.round(Math.random() * 3);
@@ -13,21 +15,32 @@ function Rock()
     
     if(compChoice == 1)
         {
-            alert("Draw");
+            document.getElementById("compChoose").src = "images/rock.jpg";
+            document.getElementById("standing").textContent = "Its a Draw";
+            document.getElementById("standing").style.color = "black";
         }
     else if(compChoice == 2)
         {
-            alert("You loose");
+            document.getElementById("compChoose").src ="images/paper.jpg";
+            
+            document.getElementById("standing").textContent = "You Loose :( ";
+            
+            document.getElementById("standing").style.color = "red";
         }
     else if(compChoice == 3)
         {
-            alert("You Win");
+            document.getElementById("compChoose").src ="images/scissors.png";
+            
+            document.getElementById("standing").textContent = "You Win!";
+            document.getElementById("standing").style.color = "gold";
         }
 }
 
-function Papper() 
+function Paper() 
 {
     var compChoice = 0;
+    
+    document.getElementById("chosen").src = "images/paper.jpg";
     
     while(compChoice == 0)
         {
@@ -36,15 +49,24 @@ function Papper()
     
     if(compChoice == 1)
         {
-            alert("You Loose");
+            document.getElementById("compChoose").src ="images/rock.jpg";
+            
+            document.getElementById("standing").textContent = "You Win!";
+            document.getElementById("standing").style.color = "gold";
         }
     else if(compChoice == 2)
         {
-            alert("You Win");
+            document.getElementById("compChoose").src ="images/paper.jpg";
+            
+            document.getElementById("standing").textContent = "Its a Draw.";
+            document.getElementById("standing").style.color = "black";
         }
     else if(compChoice == 3)
         {
-            alert("Draw");
+            document.getElementById("compChoose").src ="images/scissors.png";
+            
+            document.getElementById("standing").textContent = "You Loose :(";
+            document.getElementById("standing").style.color = "red";
         }
 }
 
@@ -52,6 +74,8 @@ function Scissors()
 {
     var compChoice = 0;
     
+    document.getElementById("chosen").src = "images/scissors.png";
+    
     while(compChoice == 0)
         {
             compChoice = Math.round(Math.random() * 3);
@@ -59,14 +83,21 @@ function Scissors()
     
     if(compChoice == 1)
         {
-            alert("You Won");
+            document.getElementById("compChoose").src ="images/rock.jpg";
+            document.getElementById("standing").textContent = "You Loose :(";
+            document.getElementById("standing").style.color = "red";
         }
     else if(compChoice == 2)
         {
-            alert("Draw");
+            document.getElementById("compChoose").src ="images/paper.jpg";
+            
+            document.getElementById("standing").textContent = "You Win!";
+            document.getElementById("standing").style.color = "gold";
         }
     else if(compChoice == 3)
         {
-            alert("You Loose");
+            document.getElementById("compChoose").src ="images/scissors.png";
+            document.getElementById("standing").textContent = "Its a Draw.";
+            document.getElementById("standing").style.color = "black";
         }
 }
